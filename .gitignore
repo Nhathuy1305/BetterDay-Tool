@@ -22,3 +22,20 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+vbs-log/
+_local
+node_modules/
+build
+data/*
+!data/ITEC_w2vv/
+.vscode/
+.vs/
+logs/*
+output/
+public/images/*
+public/export/*
+public/_thumbs/
+*.tmp
+*.log
+LOCAL_GIT_SETTINGS.md
