@@ -1,7 +1,8 @@
 package com.challenge.betterday.controller;
 
-import com.challenge.betterday.domain.model.Exception;
 import com.challenge.betterday.exception.*;
+import com.challenge.betterday.model.Exception;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;

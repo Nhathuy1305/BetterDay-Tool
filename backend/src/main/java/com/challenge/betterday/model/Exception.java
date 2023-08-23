@@ -1,4 +1,4 @@
-package com.challenge.betterday.domain.model;
+package com.challenge.betterday.model;
 
 public class Exception {
     private int status;

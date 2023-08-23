@@ -32,10 +32,67 @@
 		</dependency>
 
 		<dependency>
+    		<groupId>javax.persistence</groupId>
+    		<artifactId>javax.persistence-api</artifactId>
+    		<version>2.2</version>
+		</dependency>
+
+		<!--region JPA -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!--endregion -->
+
+		<dependency>
 			<groupId>io.weaviate</groupId>
 			<artifactId>client</artifactId>
 			<version>4.0.0</version>
 		</dependency>
+
+		<!--region lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+        </dependency>
+        <!--endregion -->
+
+		<!--region Swagger -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <!--endregion -->
+
+		<!--region Retrofit -->
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>retrofit</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>converter-gson</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <!--endregion -->
+
+        <!--region Model Mapper -->
+        <dependency>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>2.4.4</version>
+        </dependency>
+        <!--endregion -->
+
+		
 	</dependencies>
 
 	<build>
