@@ -1,12 +1,23 @@
 package com.challenge.betterday.controller;
 
-import org.apache.http.client.ResponseHandler;
+import com.challenge.betterday.entity.User;
+import com.challenge.betterday.exception.core.ArchitectureException;
+import com.challenge.betterday.facade.UserFacade;
+import com.challenge.betterday.model.common.ResponseHandler;
+import com.challenge.betterday.model.user.UserModel;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.*;
 
+import static com.challenge.betterday.util.Constants.UserPaths.USER_PATH;;
+
+@RestController
+@RequiredArgsConstructor
+@RequestMapping(USER_PATH)
+@Api(value = USER_PATH, tags = "User APIs")
 public class UserController {
     //region
     private final UserFacade facade;

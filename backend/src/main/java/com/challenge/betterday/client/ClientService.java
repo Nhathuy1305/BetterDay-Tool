@@ -1,6 +1,9 @@
-// package com.challenge.betterday.client;
+package com.challenge.betterday.client;
 
-// public interface ClientService {
-//     @GET("temp")
-//     Call<Object> sendRequest();
-// }
+import retrofit2.Call;
+import retrofit2.http.GET;
+
+public interface ClientService {
+    @GET("temp")
+    Call<Object> sendRequest();
+}
