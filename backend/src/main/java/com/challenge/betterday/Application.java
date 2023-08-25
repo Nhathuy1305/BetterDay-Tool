@@ -7,6 +7,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 // @EnableSwagger2
 @EnableScheduling
+// TODO: FIX -> Xoa "exclude = {DataSourceAutoConfiguration.class })""
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
 public class Application {
 
