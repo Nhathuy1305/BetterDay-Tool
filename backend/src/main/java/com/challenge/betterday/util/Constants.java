@@ -2,7 +2,7 @@ package com.challenge.betterday.util;
 
 public class Constants {
     public static final String API_VERSION = "/v1";
-    public static final String BASE_URL = "/architecture_api" + API_VERSION;
+    public static final String BASE_URL = "/api" + API_VERSION;
 
     public static final class UserPaths {
         public static final String USER_PATH = BASE_URL + "/user";
