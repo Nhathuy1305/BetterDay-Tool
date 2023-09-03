@@ -1,12 +1,12 @@
 import "./App.css";
-import SearchCard from "./components/SearchCard";
-import ResultCard from "./components/ResultCard";
+import LeftSection from "./components/LeftSection";
+import RightSection from "./components/RightSection";
 
 function App() {
   return (
-    <div className="App">
-      <SearchCard />
-      <ResultCard />
+    <div className="app">
+      <LeftSection />
+      <RightSection />
     </div>
   );
 }

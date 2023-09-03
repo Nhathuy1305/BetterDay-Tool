@@ -1,0 +1,9 @@
+.app{
+    display: flex;
+    flex-direction: row;
+}
+
+.title-container > .icon-link > span > a > img {
+    width: 30px;
+    height: 30px;
+}
