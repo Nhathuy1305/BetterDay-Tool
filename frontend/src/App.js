@@ -1,12 +1,10 @@
 import "./App.css";
-import LeftSection from "./components/LeftSection";
-import RightSection from "./components/RightSection";
+import SearchSection from "./components/SearchSection";
 
 function App() {
   return (
     <div className="app">
-      <LeftSection />
-      <RightSection />
+      <SearchSection />
     </div>
   );
 }
