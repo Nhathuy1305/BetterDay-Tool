@@ -5,7 +5,7 @@ target/
 !**/src/test/**/target/
 
 ### Node ###
-/node_modules
+/node_modules/
 /.pnp
 .pnp.js
 /coverage
