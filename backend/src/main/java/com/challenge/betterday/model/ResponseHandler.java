@@ -1,4 +1,4 @@
-package com.challenge.betterday.model.common;
+package com.challenge.betterday.model;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +17,7 @@ public class ResponseHandler {
             map.put("result", result);
             map.put("data", data);
             return new ResponseEntity<>(map, status);
-        } catch (Exception exception) {
+        } catch (java.lang.Exception exception) {
             System.out.println(exception.getMessage());
             map.clear();
             map.put("timestamp", new Date());
