@@ -1,15 +1,33 @@
 package com.challenge.betterday.entity;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+
+@Getter
+@Setter
+@AllArgsConstructor
 public class Item {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
+    private String id;
     private String name;
+    private String description;
+    private String category;
 
-    //
+    // Constructors
+    public Item() {
+    }
+
+    public Item(String name, String description, String category) {
+        this.name = name;
+        this.description = description;
+        this.category = category;
+    }
+
+    @JsonProperty("id")
+    public String getId() {
+        return id;
+    }
 }
