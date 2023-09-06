@@ -30,7 +30,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select().paths(PathSelectors.any())
-                .apis(RequestHandlerSelectors.basePackage("com.yilmazgokhan"))
+                .apis(RequestHandlerSelectors.basePackage("com.challenge.betterday"))
                 .build()
                 .pathMapping("/")
                 .useDefaultResponseMessages(false)
