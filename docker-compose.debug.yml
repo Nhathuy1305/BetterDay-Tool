@@ -1,13 +1,9 @@
 version: '3.4'
-
 services:
-  betterdaytool:
-    image: betterdaytool
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+  your-app:
     environment:
-      JAVA_OPTS: -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005,quiet=y
-    ports:
-      - 8080:8080
-      - 8081:8081
+      SPRING_PROFILES_ACTIVE: development
+    volumes:
+      - ./target:/app
+    command: ["java", "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005", "-jar", "betterdaytool.jar"]
+
