@@ -21,16 +21,6 @@ public class Advice {
         return exception;
     }
 
-    @ResponseStatus(HttpStatus.UNAUTHORIZED)
-    @ExceptionHandler(UnAuthorized.class)
-    public Exception unAuthorized() {
-        Exception exception = new Exception();
-        exception.setStatus(401);
-        exception.setError("Unauthorized");
-        exception.setMessage("Incorrect authentication info");
-        return exception;
-    }
-
     @ResponseStatus(HttpStatus.FORBIDDEN)
     @ExceptionHandler(Forbidden.class)
     public Exception forbidden() {

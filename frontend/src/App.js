@@ -1,8 +1,10 @@
-import './App.css';
+import "./App.css";
+import SearchSection from "./components/SearchSection";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
+      <SearchSection />
     </div>
   );
 }
