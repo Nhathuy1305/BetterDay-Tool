@@ -1,5 +1,12 @@
 # BetterDay opensource ![Docker CI/CD](https://github.com/Nhathuy1305/BetterDay-Tool/actions/workflows/pipeline.yml/badge.svg?branch=master)
 
+By:
+- Tu Nguyen (Nguyen Hoang Anh Tu)
+- Huy Dang (Dang Nhat Huy)
+- Van Bui (Bui Thi Cam Van)
+- Quan Nguyen (Tran Nguyen Trung Quan)
+- Dat Pham (Pham Tien Dat)
+
 **The latest version of the BetterDay tool is now open-source and available [here](https://github.com/Nhathuy1305/BetterDay-Tool) under the Apache-2.0 license.**
 
 This is an open-source version of the BetterDay video search and retrieval
