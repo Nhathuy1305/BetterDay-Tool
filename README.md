@@ -1,4 +1,4 @@
-# BetterDay opensource ![Docker CI/CD](https://github.com/Nhathuy1305/BetterDay-Tool/actions/workflows/pipeline.yml/badge.svg?branch=master)
+# BetterDay opensource ![Docker CI/CD](https://github.com/Nhathuy1305/BetterDay-Tool/actions/workflows/pipeline.yml/badge.svg)
 
 By:
 - Tu Nguyen (Nguyen Hoang Anh Tu)
