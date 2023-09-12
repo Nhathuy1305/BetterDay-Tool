@@ -10,8 +10,7 @@ By:
 **The latest version of the BetterDay tool is now open-source and available [here](https://github.com/Nhathuy1305/BetterDay-Tool) under the Apache-2.0 license.**
 
 This is an open-source version of the BetterDay video search and retrieval
-engine, slightly simplified from the prototype that was featured at VAI Challenge 2023 in Ho Chi Minh City, Vietnam (see https://videobrowsershowdown.org/
-).
+engine, slightly simplified from the prototype that was featured at [AI Challenge 2023](https://aichallenge.hochiminhcity.gov.vn) in Ho Chi Minh City, Vietnam.
 
 Main features:
 
@@ -135,9 +134,9 @@ The program is structured as follows:
 
 - The frontend requests are routed in `app.js` to views and actions in `routes/betterday.js`, display-specific routes are present in `routes/endpoints.js`
 - The views (for the browser) are rendered in `views/batterday.ejs`
-- Node.js "frontend" communicates with C++ "backend" that handles the main data operations; the backend source code is in `core/`; the main API is in `core/BetterDayNapi.h` (and `.cpp`)
+- Node.js "frontend" communicates with Java "backend" that handles the main data operations; the backend source code is in `core/`; the main API is in `core/BetterDayNapi.h` (and `.cpp`)
 - The backend implementation is present in `core/src/` which contains the following modules (`.cpp` and `.h`):
-  - `BetterDay` -- main data-holding structure with the C++ version of the wrapper API
+  - `BetterDay` -- main data-holding structure with the Java version of the wrapper API
   - `Submitter` -- VBS API client for submitting search results for the competition, also contains the logging functionality
   - `DatasetFrames` -- loading of the dataset description (frame IDs, shot IDs, video IDs, ...)
   - `DatasetFeatures` -- loading of the dataset feature matrix
